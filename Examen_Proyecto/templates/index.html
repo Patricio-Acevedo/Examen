@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .boton {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .boton.ejercicio1 {
+            background-color: #b700b1; /* Color magenta */
+        }
+        .boton.ejercicio2 {
+            background-color: #93d400; /* Color verde */
+        }
+        .boton:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/ejercicio1" class="boton ejercicio1">Ejercicio 1</a>
+        <a href="/ejercicio2" class="boton ejercicio2">Ejercicio 2</a>
+    </div>
+
+</body>
+</html>
